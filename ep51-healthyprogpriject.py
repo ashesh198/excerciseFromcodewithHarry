@@ -18,20 +18,21 @@ if __name__ == '__main__':
     init_water=time()
     init_eyes=time()
     init_exercise=time()
+    print("this is a program to remind you to stay healthy"\n"it informs you when to drink water,rest and exercise")
 
     while True:
         if time()-init_water>6:
-            print("time to drink water"\n"type "stop" to stop")
+            print("time to drink water"\n"type 'stop' to stop")
             musiconloop ("a.mp3", "stop")
             init_water = time ()
             log("drank water at")
         if time () - init_eyes > 7:
-            print ("time to rest eyes"\n"type "stop" to stop")
+            print ("time to rest eyes"\n"type 'stop' to stop")
             musiconloop ("a.mp3", "stop")
             init_eyes = time ()
             log ("eyes massaged at")
         if time () - init_exercise > 10:
-            print ("time to exercise"\n"type "stop" to stop")
+            print ("time to exercise"\n"type 'stop' to stop")
             musiconloop ("a.mp3", "stop")
             init_exercise = time ()
             log ("exercised at")
